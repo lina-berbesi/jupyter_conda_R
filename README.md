@@ -38,7 +38,7 @@ corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","whit
          tl.col="black", tl.srt=45,   p.mat = p.mat, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
-<img src="figures/fig1-3.png" width="600" label="fig1-2">
+<img src="figures/fig1-2.png" width="600" label="fig1-2">
 
 #### 1.3 Fitting 
 
@@ -157,7 +157,7 @@ movie3d(spin3d(axis = c(0, 0, 1),rpm=5), duration = 5,type="gif",dir=".",movie="
 if (!rgl.useNULL())
   play3d(spin3d(axis = c(0, 0, 1), rpm = 5), duration = 5)
 ```
-<img src="figures/fig3-3.gif" width="600" label="fig3-3">
+<img src="figures/Scatterplot3d.gif" width="600" label="Scatterplot3d">
 
 With magick what we did was creating a png by class in a loop using the scatterplot3d function with the addition of some overlaying points using the points3d function and then joining them into a gif using the image_join function of magick. 
 
@@ -184,7 +184,7 @@ list.files(path=".", pattern = '*.png', full.names = TRUE) %>%
   image_animate(fps=4) %>% 
   image_write("dnd_classes.gif") 
 ```
-<img src="figures/fig3-4.gif" width="600" label="fig3-4">
+<img src="figures/dnd_classes.gif" width="600" label="dnd_classes">
 
 So that is all from a board game enthusiast. I hope the analysis have been fun to read how it was to write. I think is always fun to find how to apply stats in daily life things specially if is something you like as board games and it is always refreshing to see something in a non-traditional approach.
 
