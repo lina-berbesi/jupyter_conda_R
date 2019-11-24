@@ -101,7 +101,7 @@ dnd %>%
   ggplot(aes(x=attributes, y=value)) + 
   geom_boxplot(aes(fill=attributes))+ facet_wrap( ~ attributes, scales="free")
 ```
-<img src="figures/fig2-2.png" width="300" label="fig2-2">
+<img src="figures/fig2-2.png" width="400" label="fig2-2">
 
 And then we can replicate the exercise by groups or predominat classes for the main variables: AC,HP and Con.
 
@@ -130,16 +130,14 @@ To show this i will have the 2D plot OF Con vs AC with ggplot and a 3D one of AC
 ```{r}
 twod<-ggplot(dnd, aes(x = AC, y = Con, color = predclass)) + geom_point(alpha = 0.2) + labs( title = "Plot Armour Class vs Hit Points by Predominat Class", caption="Note: Predominant class was obtained from the class variable")+ theme(plot.caption = element_text(hjust = 0))
 twod
-```
-<img src="figures/fig3-1.png" width="600" label="fig3-1">
 
-```{r}
 library(scatterplot3d)
 threed<-scatterplot3d(x =dnd$AC, y = dnd$Con, z = dnd$HP, color = as.numeric(dnd$predclass),pch=16,angle=30)
 threed
 legend(threed$xyz.convert(41, 3, 310),legend = levels(dnd$predclass), col = as.numeric(dnd$predclass), pch = 16)
 ```
-<img src="figures/fig3-2.png" width="600" label="fig3-2">
+<img src="figures/fig3-1.png" width="300" label="fig3-1">
+<img src="figures/fig3-2.png" width="300" label="fig3-2">
 
 Finally we will use the rgl and magick packges to create animations out of the 3d scatter plots. 
 
