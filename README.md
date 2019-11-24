@@ -157,7 +157,7 @@ movie3d(spin3d(axis = c(0, 0, 1),rpm=5), duration = 5,type="gif",dir=".",movie="
 if (!rgl.useNULL())
   play3d(spin3d(axis = c(0, 0, 1), rpm = 5), duration = 5)
 ```
-<img src="figures/Scatterplot3d.gif" width="600" label="Scatterplot3d">
+<img src="figures/Scatterplot3d.gif" width="300" label="Scatterplot3d">
 
 With magick what we did was creating a png by class in a loop using the scatterplot3d function with the addition of some overlaying points using the points3d function and then joining them into a gif using the image_join function of magick. 
 
