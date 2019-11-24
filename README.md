@@ -88,7 +88,7 @@ ggplot(dnd_bar, aes(x=predrace, y=total,fill=predclass)) +
   coord_polar(start = 0)
 ```
 
-<img src="figures/fig2-1.png" width="600" label="fig2-1">
+<img src="figures/fig2-1.png" width="500" label="fig2-1">
 
 #### 2.2 Boxplot to display variability
 
@@ -101,7 +101,7 @@ dnd %>%
   ggplot(aes(x=attributes, y=value)) + 
   geom_boxplot(aes(fill=attributes))+ facet_wrap( ~ attributes, scales="free")
 ```
-<img src="figures/fig2-2.png" width="400" label="fig2-2">
+<img src="figures/fig2-2.png" width="200" label="fig2-2">
 
 And then we can replicate the exercise by groups or predominat classes for the main variables: AC,HP and Con.
 
@@ -112,14 +112,14 @@ ggplot(dnd, aes(y =AC, x = predclass, color = predclass)) + xlab("Predominant cl
 
 ggplot(dnd, aes(y =Con, x = predclass, color = predclass)) + xlab("Predominant class") + ylab("Con") + ggtitle("Comparison Con Among Classes*") + geom_boxplot() + labs(caption="Note:Predominant class") + theme(axis.text.x = element_text(angle = 90),plot.caption = element_text(hjust = 0))
 ```
-<img src="figures/fig2-3.png" width="600" label="fig2-3">
+<img src="figures/fig2-3.png" width="500" label="fig2-3">
 
 Lastly I thought it would be good to bring out the facet wrap functionality of ggplot which is really useful when you want to do split up your data by one or more variables(groups or classes in our case) and plot the subsets of data together. 
 
 ```{r}
 ggplot(dnd, aes(y = AC, x = HP,color=predclass)) + xlab("HP") + ylab("AC") + ggtitle(paste0("Comparison Among Classes*")) + geom_boxplot() + labs(caption="Note:Predominant class") + theme(axis.text.x = element_text(angle = 90),plot.caption = element_text(hjust = 0))+ facet_wrap(~predclass)
 ```
-<img src="figures/fig2-4.png" width="600" label="fig2-4">
+<img src="figures/fig2-4.png" width="500" label="fig2-4">
 
 #### 3D scatter plot
 
