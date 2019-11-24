@@ -61,7 +61,7 @@ cdfcomp(list(fp,fnb,fg,fn),legendtext = c("Poisson", "negative binomial","geomet
 
 ### 2. Classes and Races
 
-The initial data set had 768 classes and 182 races which were reduced into 13 predominant classes and 16 predominant races for faciliting data visualization and manipulation.
+The initial data set had 768 classes and 182 races which were reduced into 13 predominant classes and 16 predominant races for facilitating data visualization and manipulation.
 
 #### 2.1 Circular plot
 
