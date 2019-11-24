@@ -38,7 +38,7 @@ corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","whit
          tl.col="black", tl.srt=45,   p.mat = p.mat, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
-<img src="figures/fig1-2.png" width="200" label="fig1-2">
+<img src="figures/fig1-2.png" width="400" label="fig1-2">
 
 #### 1.3 Fitting 
 
@@ -101,7 +101,7 @@ dnd %>%
   ggplot(aes(x=attributes, y=value)) + 
   geom_boxplot(aes(fill=attributes))+ facet_wrap( ~ attributes, scales="free")
 ```
-<img src="figures/fig2-2.png" width="200" label="fig2-2">
+<img src="figures/fig2-2.png" width="400" label="fig2-2">
 
 And then we can replicate the exercise by groups or predominat classes for the main variables: AC,HP and Con.
 
