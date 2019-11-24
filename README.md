@@ -38,7 +38,7 @@ corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","whit
          tl.col="black", tl.srt=45,   p.mat = p.mat, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
-<img src="figures/fig1-2.png" width="400" label="fig1-2">
+<img src="figures/fig1-2.png" height="400" label="fig1-2">
 
 #### 1.3 Fitting 
 
