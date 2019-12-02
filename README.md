@@ -35,7 +35,7 @@ A correlogram was done to measure if there was any degree of correlation between
 corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","white","blue")) (200), 
          type="upper", order="hclust", 
          addCoef.col = "black",
-         tl.col="black", tl.srt=45,   p.mat = p.mat, sig.level = 0.01, insig = "blank", diag=FALSE 
+         tl.col="black", tl.srt=45, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
 <img src="figures/fig1-2.png" height="400" label="fig1-2">
@@ -69,7 +69,6 @@ For this we will keep using ggplot2 along with tidyverse and dplyr as we did bef
 
 ```{}
 dnd_bar <- dnd %>%
-  select(name,predrace,predclass) %>%
   add_count(name) %>%
   group_by(predrace,predclass) %>%
   summarise(total = sum(n)) 
