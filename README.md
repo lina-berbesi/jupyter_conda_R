@@ -2,6 +2,8 @@
 
 This analysis was built on a database already established by [Burak Ogan](https://github.com/oganm/dnddata). There is already a previous analysis over this same database built by [Jacob Soderlund in displayr](https://www.displayr.com/dungeons-and-data-science/) so in this one i tried to not to repeated what he had done before and instead to give extra insigths over the classes with focus on the visualizations.
 
+Note:Have in mind that this uses a DnD weekly updated dataset by Burak Ogan https://github.com/oganm/dnddata. So patterns could change over time in classes and races which can affect the regular expression code for predclasses and predraces.
+
 Before going into the details of the analysis here is a quick introduction. 
 
 D&D is a rolling dice game that works usually based on a set of 7 dice (d4,d6,d8,d10,d12,d20 and another d10). Dice play an important role in the game and they are all used with different aims. For example a d20 is usually used in attacks while d4,d6,d8,d10 or d12 are used for weapons damage depending on the weapon,character and a few other variables. But also dice are also used when setting the scores of a character.
@@ -133,7 +135,7 @@ twod
 library(scatterplot3d)
 threed<-scatterplot3d(x =dnd$AC, y = dnd$Con, z = dnd$HP, color = as.numeric(dnd$predclass),pch=16,angle=30)
 threed
-legend(threed$xyz.convert(41, 3, 310),legend = levels(dnd$predclass), col = as.numeric(dnd$predclass), pch = 16)
+legend(threed$xyz.convert(41, 3, 500),legend = levels(dnd$predclass), col = as.numeric(dnd$predclass), pch = 16)
 ```
 <img src="figures/fig3-1.png" width="300" label="fig3-1">
 <img src="figures/fig3-2.png" width="300" label="fig3-2">
