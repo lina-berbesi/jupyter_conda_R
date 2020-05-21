@@ -40,7 +40,7 @@ corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","whit
          tl.col="black", tl.srt=45, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
-<img src="figures/fig1-2.png" height="400" label="fig1-2" alt="lina berbesi">
+<img src="figures/fig1-2.png" height="400" label="fig1-2">
 
 #### 1.3 Fitting 
 
@@ -203,4 +203,6 @@ Licence: this work is released under Creative Common Attribution 4.0.
 ## Acknowledgments
 
 * Burak Ogan Mancarcı (https://github.com/oganm/dnddata)
+
+<meta name="author" content="lina berbesi">
 
