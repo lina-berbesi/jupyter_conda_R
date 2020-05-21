@@ -1,5 +1,4 @@
 ## D&D 
-<meta name="lina berbesi" content="D&D">
 
 This analysis was built on a database already established by [Burak Ogan](https://github.com/oganm/dnddata). There is already a previous analysis over this same database built by [Jacob Soderlund in displayr](https://www.displayr.com/dungeons-and-data-science/) so in this one i tried to not to repeated what he had done before and instead to give extra insigths over the classes with focus on the visualizations.
 
@@ -41,7 +40,7 @@ corrplot(abs(cor(dnd[,2:9])), method="color", col=colorRampPalette(c("red","whit
          tl.col="black", tl.srt=45, sig.level = 0.01, insig = "blank", diag=FALSE 
 )
 ```
-<img src="figures/fig1-2.png" height="400" label="fig1-2">
+<img src="figures/fig1-2.png" height="400" label="fig1-2" alt="lina berbesi">
 
 #### 1.3 Fitting 
 
