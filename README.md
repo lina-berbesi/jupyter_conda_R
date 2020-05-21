@@ -88,8 +88,8 @@ ggplot(dnd_bar, aes(x=predrace, y=total,fill=predclass)) +
   ) +
   coord_polar(start = 0)
 ```
-
-<img src="figures/fig2-1.png" width="500" label="fig2-1">
+<meta name="lina berbesi" content="figures/fig2-1.png"  width="500" label="fig2-1">
+#<img src="figures/fig2-1.png" width="500" label="fig2-1">
 
 #### 2.2 Boxplot to display variability
 
