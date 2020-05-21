@@ -1,4 +1,5 @@
 ## D&D 
+<meta name="lina berbesi" content="D&D">
 
 This analysis was built on a database already established by [Burak Ogan](https://github.com/oganm/dnddata). There is already a previous analysis over this same database built by [Jacob Soderlund in displayr](https://www.displayr.com/dungeons-and-data-science/) so in this one i tried to not to repeated what he had done before and instead to give extra insigths over the classes with focus on the visualizations.
 
@@ -88,8 +89,7 @@ ggplot(dnd_bar, aes(x=predrace, y=total,fill=predclass)) +
   ) +
   coord_polar(start = 0)
 ```
-<meta name="lina berbesi" content="figures/fig2-1.png"  width="500" label="fig2-1">
-#<img src="figures/fig2-1.png" width="500" label="fig2-1">
+<img src="figures/fig2-1.png" width="500" label="fig2-1">
 
 #### 2.2 Boxplot to display variability
 
